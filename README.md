@@ -1,6 +1,6 @@
 # Similaridade-do-Cosseno
 Desafio de Algebra Linear
-''' {python}
+```{Python}
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -49,4 +49,5 @@ dados_selecionados['Cosine Angle'] = [math.degrees(math.acos(similarity)) for si
 # imprimir os 10 perfumes mais similares com as colunas adicionais
 print("A nota_perfume mais similar a", ' '.join(map(str, nota_perfume)), "são:")
 display(dados_selecionados.loc[top_similares, ['Name', 'Notes', 'Cosine Similarity', 'Cosine Angle']])
-'''
+``` 
+
